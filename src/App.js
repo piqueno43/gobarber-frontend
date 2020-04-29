@@ -15,13 +15,13 @@ import GlobalStyle from './styles/global';
 function App() {
   return (
     <Provider store={store}>
-      <PersistGate persistor={persistor}>
-        <Router history={history}>
+      <Router history={history}>
+        <PersistGate persistor={persistor}>
           <Routes />
           <GlobalStyle />
           <ToastContainer autoClose={3000} />
-        </Router>
-      </PersistGate>
+        </PersistGate>
+      </Router>
     </Provider>
   );
 }

@@ -27,7 +27,7 @@ export default function Header() {
             </div>
             <img
               src={
-                profile.avatar.url ||
+                profile?.avatar?.url ||
                 'https://api.adorable.io/avatars/50/list@adorable.png'
               }
               alt="Edivaldo Silva"
